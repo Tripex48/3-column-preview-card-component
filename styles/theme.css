@@ -1,0 +1,27 @@
+:root {
+  --clr-primary-900: hsl(179deg 100% 13%);
+  --clr-primary-700: hsl(184deg 100% 22%);
+  --clr-primary-400: hsl(31deg 77% 52%);
+
+  --clr-neutral-400: hsl(0deg 0% 100% / 75%);
+  --clr-neutral-100: hsl(0deg 0% 95%);
+
+  --clr-white: #fff;
+  --clr-blue: #3e52a3;
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", cursive;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.375rem;
+  --fs-700: 1.6875rem;
+  --fs-900: 3.5rem;
+}

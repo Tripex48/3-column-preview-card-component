@@ -1,0 +1,116 @@
+@import url("reset.css");
+@import url("theme.css");
+
+/* Custom Styles */
+
+body {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-400);
+  font-family: var(--ff-primary);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+article {
+  width: 305px;
+  padding: 2.5rem 3rem;
+}
+
+article>*+* {
+  padding-top: 1.5rem;
+}
+
+article>h1 {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-secondary);
+  font-size: 2.2rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+article>button {
+  width: 9rem;
+  margin-top: 5rem;
+  padding: 0.6875rem;
+  border: none;
+  border-radius: 1.75rem;
+  background-color: var(--clr-neutral-100);
+}
+
+article>button:hover {
+  padding: 0.5625rem;
+  border: solid 2px white;
+  background-color: var(--clr-button);
+  color: var(--clr-neutral-100);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 942px) {
+  body {
+    height: max-content;
+    padding-top: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  article {
+    width: 335px;
+  }
+
+  article>button {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Utility Classes */
+
+.bg-orange {
+  background-color: var(--clr-primary-400);
+}
+
+.bg-cyan {
+  background-color: var(--clr-primary-700);
+}
+
+.bg-darkcyan {
+  background-color: var(--clr-primary-900);
+}
+
+.text-orange {
+  color: var(--clr-primary-400);
+}
+
+.text-cyan {
+  color: var(--clr-primary-700);
+}
+
+.text-darkcyan {
+  color: var(--clr-primary-900);
+}
+
+.attribution {
+  width: 100%;
+  margin-top: 1.5rem;
+  color: black;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg 45% 44%);
+}
